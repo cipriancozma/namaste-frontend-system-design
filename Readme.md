@@ -1,5 +1,9 @@
 ## Namaste Frontend System Design
 
+### Networking
+
+---
+
 ### Security
 
 ---
