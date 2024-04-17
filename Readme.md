@@ -6,6 +6,10 @@
 
 Important to look over:
 
+1. How the Web works
+2. Communication Protocols
+3. Rest APIs
+
 ### Security
 
 ---
