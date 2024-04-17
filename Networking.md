@@ -5,8 +5,11 @@
 1. How the Web works
 
 Client -> Router -> ISP -> DNS Server (DNS server responds with the IP address for the URL you are asking for)
+
 DNS Server -> ISP -> Router -> Client (Client receives the IP address and sends it to the server in order to receive the files)
+
 Client -> Server (Client sending the IP adress and asks for the files)
+
 Server -> Client (Client receives the files it's asking for and renders them into the browser)
 
 2. Communication Protocols
