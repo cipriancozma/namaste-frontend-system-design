@@ -14,23 +14,16 @@ Server -> Client (Client receives the files it's asking for and renders them int
 
 2. Communication Protocols
 
-Protocol | How does it work? | Use Cases
-
-HTTP | TCP Connection (HTTP Req <-> HTTP Res) | Web browsing
-
-HTTP/3 | UDP Connection | IoT & Virtual Reality
-
-HTTPS | TCP Connection ( public key <---, ---> session key, <---> encrypted data) | Web browsing
-
-WebSocket | HTTP Upgrade <---> | Live chat && Real time data transmission
-
-TCP | ---> SYN, <--- SYN + ACK, ---> ACK | Web browsing & email protocols
-
-UDP | <--- Request, ---> Response | Video Conferencing
-
-SMTP | sender ----> SMTP Server ---> receiver | Sending/Receiving Emails
-
-FTP | <---> Control Channel, <---> Data Channel | Upload / Download Files
+| Protocol  |                             How does it work?                             |                Use Cases                 |
+| :-------: | :-----------------------------------------------------------------------: | :--------------------------------------: |
+|   HTTP    |                  TCP Connection (HTTP Req <-> HTTP Res)                   |               Web browsing               |
+|  HTTP/3   |                              UDP Connection                               |          IoT & Virtual Reality           |
+|   HTPPS   | TCP Connection ( public key <---, ---> session key, <---> encrypted data) |               Web browsing               |
+| WebSocket |                            HTTP Upgrade <--->                             | Live chat && Real time data transmission |
+|    TCP    |                    ---> SYN, <--- SYN + ACK, ---> ACK                     |      Web browsing & email protocols      |
+|    UDP    |                        <--- Request, ---> Response                        |            Video Conferencing            |
+|   SMTP    |                  sender ----> SMTP Server ---> receiver                   |         Sending/Receiving Emails         |
+|    FTP    |                 <---> Control Channel, <---> Data Channel                 |         Upload / Download Files          |
 
 3. REST APIs
 
@@ -89,6 +82,30 @@ PUT vs PATCH (PUT modifies a record's information and creates a new record if on
 
     3.5. Status Code
 
-| Status Range |          Usecase           |          Status Code          | Use Case                      |
-| :----------: | :------------------------: | :---------------------------: | ----------------------------- |
-|     Date     | When the response was send | Thu, 30 Nov 2023 03:36:04 GMT | Thu, 30 Nov 2023 03:36:04 GMT |
+| Status Range |   Usecase    | Status Code | Use Case              |
+| :----------: | :----------: | :---------: | --------------------- |
+|     1xx      | Information  |     100     | Continue              |
+|              |              |     101     | Switching Protocol    |
+|     2xx      |   Success    |     200     | OK                    |
+|              |              |     201     | Created               |
+|              |              |     202     | Accepted              |
+|              |              |     204     | No Content            |
+|              |              |     206     | Partial Content       |
+|     3xx      | Redirection  |     301     | Moved Permanently     |
+|              |              |     302     | Temporary Moved       |
+|              |              |     307     | 302 = Retain Method   |
+|              |              |     308     | 301 = Retain Method   |
+|     4xx      | Client Error |     400     | Bad Request           |
+|              |              |     401     | Unauthorized          |
+|              |              |     403     | Authorization Error   |
+|              |              |     404     | Not Found             |
+|              |              |     405     | Method Not Allowed    |
+|     5xx      | Server Error |     500     | Internal Server Error |
+|              |              |     502     | Bad Gateway           |
+|              |              |     503     | Service Unavailable   |
+|              |              |     504     | Gateway Timeout       |
+|              |              |     507     | Insufficient Storage  |
+
+4. GraphQL
+
+---
