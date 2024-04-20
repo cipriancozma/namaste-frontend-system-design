@@ -82,30 +82,57 @@ PUT vs PATCH (PUT modifies a record's information and creates a new record if on
 
     3.5. Status Code
 
-| Status Range |   Usecase    | Status Code | Use Case              |
-| :----------: | :----------: | :---------: | --------------------- |
-|     1xx      | Information  |     100     | Continue              |
-|              |              |     101     | Switching Protocol    |
-|     2xx      |   Success    |     200     | OK                    |
-|              |              |     201     | Created               |
-|              |              |     202     | Accepted              |
-|              |              |     204     | No Content            |
-|              |              |     206     | Partial Content       |
-|     3xx      | Redirection  |     301     | Moved Permanently     |
-|              |              |     302     | Temporary Moved       |
-|              |              |     307     | 302 = Retain Method   |
-|              |              |     308     | 301 = Retain Method   |
-|     4xx      | Client Error |     400     | Bad Request           |
-|              |              |     401     | Unauthorized          |
-|              |              |     403     | Authorization Error   |
-|              |              |     404     | Not Found             |
-|              |              |     405     | Method Not Allowed    |
+| Status Range |   Usecase    | Status Code |       Use Case        |
+| :----------: | :----------: | :---------: | :-------------------: |
+|     1xx      | Information  |     100     |       Continue        |
+|              |              |     101     |  Switching Protocol   |
+|     2xx      |   Success    |     200     |          OK           |
+|              |              |     201     |        Created        |
+|              |              |     202     |       Accepted        |
+|              |              |     204     |      No Content       |
+|              |              |     206     |    Partial Content    |
+|     3xx      | Redirection  |     301     |   Moved Permanently   |
+|              |              |     302     |    Temporary Moved    |
+|              |              |     307     |  302 = Retain Method  |
+|              |              |     308     |  301 = Retain Method  |
+|     4xx      | Client Error |     400     |      Bad Request      |
+|              |              |     401     |     Unauthorized      |
+|              |              |     403     |  Authorization Error  |
+|              |              |     404     |       Not Found       |
+|              |              |     405     |  Method Not Allowed   |
 |     5xx      | Server Error |     500     | Internal Server Error |
-|              |              |     502     | Bad Gateway           |
-|              |              |     503     | Service Unavailable   |
-|              |              |     504     | Gateway Timeout       |
+|              |              |     502     |      Bad Gateway      |
+|              |              |     503     |  Service Unavailable  |
+|              |              |     504     |    Gateway Timeout    |
 |              |              |     507     | Insufficient Storage  |
 
 4. GraphQL
 
 ---
+
+    4.1. What is GraphQL?
+
+It is a Graph Query Language and the data is represented in a graph model.
+
+    4.2. GraphQL Benefits
+
+- Avoid Over-fetching
+- Avoid Under-fetching
+- Better Mobile performance
+- Better Efficiency & Precision
+- Declarative Data Fetching
+- Structural / Hierarchical Structure
+- Strongly typed
+- Real time Capabilities > Subscription
+
+  4.3. Rest vs GraphQL
+
+|            Aspect            | REST | GraphQL |
+| :--------------------------: | :--: | :-----: |
+|        Data Fetching         |      |         |
+|      Request Structure       |      |         |
+| Over-fetching/Under-fetching |      |         |
+|        Response size         |      |         |
+|          Versioning          |      |         |
+|      Schema Definition       |      |         |
+|    Real-time capabilities    |      |         |
