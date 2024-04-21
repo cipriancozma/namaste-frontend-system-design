@@ -140,3 +140,39 @@ It is a Graph Query Language and the data is represented in a graph model.
 |           Caching            |      Relies on HTTP cache      |                 Fine grained caching                 |
 |        Client Control        |               No               |                         Yes                          |
 |    Adoption and Community    |         Widely adopted         | Rapidly growing adoption and large community support |
+
+    4.4. GraphQL Building Blocks
+
+- Schema / Types
+
+- Query / Mutation
+
+- Resolver
+
+|                  |                                    GraphQL Building Blocks                                     |     |
+| :--------------: | :--------------------------------------------------------------------------------------------: | :-: |
+|  Schema / Types  | For Types we have Scalar (ID, String, Int, Boolean) and Custom Types (e.g. Country, Continent) |     |
+| Query / Mutation |             HTTP: POST -> Query is for getting data and Mutation for updating data             |     |
+|     Resolver     |                                                                                                |     |
+
+```
+type Country {
+    code: String
+    currency: String
+    phone: String
+    name: String
+    ID: ID
+}
+```
+
+```
+type Query {
+    countries: [Country]
+}
+```
+
+```
+type Mutation {
+    language(id: ID): Language
+}
+```
