@@ -127,12 +127,12 @@ It is a Graph Query Language and the data is represented in a graph model.
 
   4.3. Rest vs GraphQL
 
-|            Aspect            | REST | GraphQL |
-| :--------------------------: | :--: | :-----: |
-|        Data Fetching         |      |         |
-|      Request Structure       |      |         |
-| Over-fetching/Under-fetching |      |         |
-|        Response size         |      |         |
-|          Versioning          |      |         |
-|      Schema Definition       |      |         |
-|    Real-time capabilities    |      |         |
+|            Aspect            |              REST              |               GraphQL               |
+| :--------------------------: | :----------------------------: | :---------------------------------: |
+|        Data Fetching         |       Multiple endpoints       |          Single endpoints           |
+|      Request Structure       | Fixed structure + HTTP methods |     Flexible (Query / Mutation)     |
+| Over-fetching/Under-fetching |             Issues             |              Resolved               |
+|        Response size         |           Fixed size           |            Flexible size            |
+|          Versioning          |      Explicit versioning       |           Flexible nature           |
+|      Schema Definition       |        Not well defined        |     Explicit schema definition      |
+|    Real-time capabilities    |      Polling, web socket       | Out of scope support (subscription) |
