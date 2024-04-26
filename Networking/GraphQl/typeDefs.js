@@ -15,5 +15,5 @@ export const typeDefs = `
     type Query {
         authors: [Author]
         books: [Book]
-    }
+    } 
 `;
